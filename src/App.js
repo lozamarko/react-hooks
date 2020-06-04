@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Dialog from "./components/Dialog.component"
+import Greetings from "./components/Greetings.component"
 import { useForm } from "./useForm";
 
 const App = () => {
@@ -16,6 +18,9 @@ const App = () => {
           value={values.password}
           onChange={handleChange}
         />
+        <Dialog>
+          <Greetings greeting="hellooooooooo"></Greetings>   
+        </Dialog>
       </>
     </div>
   );
